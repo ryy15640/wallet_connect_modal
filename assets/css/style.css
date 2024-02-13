@@ -1,40 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Inter&display=swap');
+
 body {
   margin: 0;
   padding: 0;
-  background-color: lightskyblue;
+  background-color: #272727;
 }
 
 .web3-modal-wrapper {
+  font-family: 'Inter';
   position: absolute;
   z-index: 10;
-  background-color: #1a1b1f;
+  background-color: #191a1a;
   color: white;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 20px 10px 10px;
-  border-radius: 20px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 44px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  width: 300px;
 }
 
 .web3-modal-wrapper .web3-modal-title {
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.web3-modal-wrapper .web3-modal-items .item  {
+.web3-modal-wrapper .web3-modal-items .item {
   cursor: pointer;
-  padding: 5px 10px ;
-  background-color: #272727;
+  padding: 7px 10px;
+  background-color: rgba(255, 255, 255, 0.02);
   margin: 10px 0;
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
-  transition-duration: .6s;
+  transition-duration: 0.6s;
 }
 
-.web3-modal-wrapper .web3-modal-items .item:hover  {
-  background-color: #353841;
+.web3-modal-wrapper .web3-modal-items .item:hover {
+  background-color: rgba(255, 255, 255, 0.05);
 }
 
 .web3-modal-wrapper .web3-modal-items .item .arrow {
@@ -42,7 +49,7 @@ body {
 }
 
 .web3-modal-wrapper .web3-modal-items .item .arrow::after {
-  content: "➢";
+  content: '➢';
 }
 
 .web3-modal-wrapper .web3-modal-items .item > div {
@@ -56,7 +63,13 @@ body {
 }
 
 .web3-modal-wrapper .web3-modal-items .item > div .icon img {
-  width: 30px;
+  width: 40px;
   margin-right: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
+}
+
+@media (max-width: 430px) {
+  .web3-modal-wrapper {
+    width: 100%;
+  }
 }
