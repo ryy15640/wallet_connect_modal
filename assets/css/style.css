@@ -6,6 +6,16 @@ body {
   background-color: #272727;
 }
 
+.web3-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.01);
+  z-index: 9;
+}
+
 .web3-modal-wrapper {
   font-family: 'Inter';
   position: absolute;
@@ -21,12 +31,26 @@ body {
   width: 300px;
 }
 
-.web3-modal-wrapper .web3-modal-title {
+.web3-modal-wrapper .web3-modal-header {
+  padding: 0 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 30px;
+}
+
+.web3-modal-wrapper .web3-modal-header .web3-modal-help,
+.web3-modal-wrapper .web3-modal-header .web3-modal-close {
+  width: 17px;
+  cursor: pointer;
+  display: flex;
+}
+
+.web3-modal-wrapper .web3-modal-header .web3-modal-title {
   text-align: center;
   font-size: 16px;
-  padding-bottom: 20px;
-  margin-bottom: 30px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 0;
 }
 
 .web3-modal-wrapper .web3-modal-items .item {
