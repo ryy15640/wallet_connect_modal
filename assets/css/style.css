@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: lightskyblue;
+}
+
+.web3-modal-wrapper {
+  position: absolute;
+  z-index: 10;
+  background-color: #1a1b1f;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px 10px 10px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.web3-modal-wrapper .web3-modal-title {
+  text-align: center;
+  font-size: 18px;
+}
+
+.web3-modal-wrapper .web3-modal-items .item  {
+  cursor: pointer;
+  padding: 5px 10px ;
+  background-color: #272727;
+  margin: 10px 0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  transition-duration: .6s;
+}
+
+.web3-modal-wrapper .web3-modal-items .item:hover  {
+  background-color: #353841;
+}
+
+.web3-modal-wrapper .web3-modal-items .item .arrow {
+  margin-right: 0;
+}
+
+.web3-modal-wrapper .web3-modal-items .item .arrow::after {
+  content: "➢";
+}
+
+.web3-modal-wrapper .web3-modal-items .item > div {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.web3-modal-wrapper .web3-modal-items .item > div .icon {
+  display: flex;
+}
+
+.web3-modal-wrapper .web3-modal-items .item > div .icon img {
+  width: 30px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
