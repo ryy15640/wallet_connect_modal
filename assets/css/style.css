@@ -42,7 +42,7 @@ body {
 
 .web3-modal-wrapper .web3-modal-header .web3-modal-help,
 .web3-modal-wrapper .web3-modal-header .web3-modal-close {
-  width: 17px;
+  width: 16px;
   cursor: pointer;
   display: flex;
 }
